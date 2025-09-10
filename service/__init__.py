@@ -28,7 +28,7 @@ log_handlers.init_logging(app, "gunicorn.error")
 # Create tailsman
 talisman = Talisman(app)
 
-#create cors
+# create cors
 CORS(app)
 
 app.logger.info(70 * "*")
